@@ -1,0 +1,6 @@
+./Tools/unpack boot.img Kernel/bzImage Ramdisk/ramdisk
+rm -rf Ramdisk/modify
+mkdir Ramdisk/modify
+cd Ramdisk/modify
+gunzip -c ../ramdisk | cpio -i
+cd ../../

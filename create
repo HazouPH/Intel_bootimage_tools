@@ -1,0 +1,5 @@
+rm Mod*
+cd Ramdisk/modify
+find . ! -name '*.*~' | cpio -o -H newc | gzip > ../modifiedramdisk
+cd ../../
+./Tools/pack boot.img Kernel/bzImage Ramdisk/modifiedramdisk Modifiedboot$(date +%d%B%Y_%H:%M).img
