@@ -1,4 +1,4 @@
-./Tools/unpack boot.img Kernel/bzImage Ramdisk/ramdisk
+./Tools/unpack boot.img Kernel/bzImage Ramdisk/ramdisk Ramdisk/cmdline
 rm -rf Ramdisk/modify
 mkdir Ramdisk/modify
 cd Ramdisk/modify
